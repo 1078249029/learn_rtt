@@ -116,6 +116,15 @@
 /* Wiced WiFi */
 
 
+/* CYW43012 WiFi */
+
+
+/* BL808 WiFi */
+
+
+/* CYW43439 WiFi */
+
+
 /* IoT Cloud */
 
 
@@ -138,11 +147,43 @@
 /* u8g2: a monochrome graphic library */
 
 
-/* PainterEngine: A cross-platform graphics application framework written in C language */
-
-
 /* tools packages */
 
+#define PKG_USING_SYSTEMVIEW
+#define PKG_SYSVIEW_APP_NAME "RT-Thread Trace"
+#define PKG_SYSVIEW_DEVICE_NAME "Cortex-M3"
+#define PKG_SYSVIEW_TIMESTAMP_FREQ 0
+#define PKG_SYSVIEW_CPU_FREQ 0
+#define PKG_SYSVIEW_RAM_BASE 0x20000000
+#define PKG_SYSVIEW_EVENTID_OFFSET 32
+#define PKG_SYSVIEW_USE_CYCCNT_TIMESTAMP
+#define PKG_SYSVIEW_SYSDESC0 "I#15=SysTick"
+#define PKG_SYSVIEW_SYSDESC1 ""
+#define PKG_SYSVIEW_SYSDESC2 ""
+
+/* Segger RTT configuration */
+
+#define PKG_SEGGER_RTT_MAX_NUM_UP_BUFFERS 3
+#define PKG_SEGGER_RTT_MAX_NUM_DOWN_BUFFERS 3
+#define PKG_SEGGER_RTT_BUFFER_SIZE_UP 1024
+#define PKG_SEGGER_RTT_BUFFER_SIZE_DOWN 16
+#define PKG_SEGGER_RTT_PRINTF_BUFFER_SIZE 64
+#define PKG_SEGGER_RTT_AS_SERIAL_DEVICE
+#define PKG_SERIAL_DEVICE_NAME "segger"
+#define PKG_SEGGER_RTT_MODE_ENABLE_NO_BLOCK_SKIP
+#define PKG_SEGGER_RTT_MAX_INTERRUPT_PRIORITY 0x20
+
+/* SystemView buffer configuration */
+
+#define PKG_SEGGER_SYSVIEW_RTT_BUFFER_SIZE 1024
+#define PKG_SEGGER_SYSVIEW_RTT_CHANNEL 1
+#define PKG_SEGGER_SYSVIEW_USE_STATIC_BUFFER
+
+/* SystemView Id configuration */
+
+#define PKG_SEGGER_SYSVIEW_ID_BASE 0x10000000
+#define PKG_SEGGER_SYSVIEW_ID_SHIFT 2
+#define PKG_USING_SYSTEMVIEW_LATEST_VERSION
 
 /* system packages */
 
@@ -160,11 +201,19 @@
 
 /* peripheral libraries and drivers */
 
+/* sensors drivers */
+
+
+/* touch drivers */
+
 
 /* Kendryte SDK */
 
 
 /* AI packages */
+
+
+/* Signal Processing and Control Algorithm Packages */
 
 
 /* miscellaneous packages */
@@ -177,13 +226,39 @@
 /* entertainment: terminal games and other interesting software packages */
 
 
-/* Privated Packages of RealThread */
+/* Arduino libraries */
 
 
-/* Network Utilities */
+/* Projects and Demos */
 
 
-/* RT-Thread Smart */
+/* Sensors */
+
+
+/* Display */
+
+
+/* Timing */
+
+
+/* Data Processing */
+
+
+/* Data Storage */
+
+/* Communication */
+
+
+/* Device Control */
+
+
+/* Other */
+
+
+/* Signal IO */
+
+
+/* Uncategorized */
 
 #define SOC_FAMILY_STM32
 #define SOC_SERIES_STM32F1
