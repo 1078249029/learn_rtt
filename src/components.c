@@ -154,7 +154,7 @@ int __low_level_init(void)
     __iar_data_init3();
     rtthread_startup();
     return 0;
-}
+}  
 #elif defined(__GNUC__)
 /* Add -eentry to arm-none-eabi-gcc argument */
 int entry(void)
